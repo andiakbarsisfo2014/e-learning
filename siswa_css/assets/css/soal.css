@@ -1,0 +1,408 @@
+.pas{
+	margin-right: 20px;
+	margin-left: 20px;
+	background-color:;
+	padding-top: 40px !important;
+}
+.pass{
+	margin-right: 20px;
+	margin-left: 20px;
+	background-color:;
+	padding-top: 40px !important;
+}
+.max{
+	max-width: 100%;
+	min-width: 100%;
+}
+.s{
+	padding-left: 0px;
+}
+.l{
+	padding-left: 0px;
+}
+.i{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.c{
+	padding-left: 0px;
+}
+.tempat{
+	display:block;
+	position:relative:
+	padding-left:35px;
+	margin-bottom:12px;
+	cursor:pointer;
+	font-size:22px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.tempat input{
+	position:absolute;
+	opacity:0px;
+	cursor:pointer;
+}
+.checkmark {
+	position: absolute;
+	top:0;
+	left:0;
+	height:25px;
+	width:25px;
+	background-color:#eee;
+	border-radius:50%;
+}
+.tempat:hover input ~ .checkmark{
+	background-color: #ccc;
+}
+.tempat input:checked ~ .checkmark{
+	background-color: #2196f3;
+}
+.checkmark:after{
+	content:"";
+	position:absolute;
+	display:none;
+}
+.tempat input:checked ~
+.checkmark:after{
+	display:block;
+}
+.tempat .checkmark:after{
+	top:9px;
+	left:9px;
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	background:white;
+}
+.soal{
+	border: solid 2px #e91e63;
+	padding-right:0%;
+	padding-left:0%;  
+	margin-left:0%; 
+	margin-right:0px;
+	color: black;
+}
+.hsoal{
+	font-size: 2vw; 
+	padding-left: 2%;
+}
+.jsoal{
+	font-size: 2vw; 
+	padding-left: 6%;
+	display:grid;
+}
+.gbrjwb{
+	height: 100%;
+	width:100%;
+}
+.headsoal{
+	background-color: #e91e63;
+	margin-bottom:;
+	margin-top:-3.7%;
+	margin-left:0%;
+	margin-right:0%;
+	text-align: center;
+	color: white;
+}
+.gbrsoal{
+	width: 100%;
+	height: 100%;
+}
+.head1{
+	background-color:#e91e63;
+	margin-bottom:;
+	margin-top:-1%;
+	margin-left:-10px;
+	margin-right:-10px;
+	text-align: center;
+	color: white;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.ket{
+		border: solid 2px #e91e63;
+	    padding-right:10px;
+	    padding-left:10px; 
+	    margin-right:px; 
+	    margin-left: -2.01%;
+	    text-align: center;
+}
+.wkt{
+	    padding-top: 35%;
+}
+.wkt1{
+	    border: solid 2px #e91e63;
+	    padding-top: 1%;
+	    padding-bottom: 1%;
+	    margin: 0%;
+	    margin-left:0%;
+	    margin-right:0%;
+	    background-color:#e91e63;
+	}
+.hwaktu{
+	font-size: 2.5vw;
+}
+.pg{
+	color: white !important;
+}
+.rd{
+	color: black !important;
+	padding-top: 0%;
+	margin-top: 1.5%;
+	font-size: 1.5vw;
+}
+
+/*materi mtk*/
+.s4{
+	border: solid 3px #e91e63;
+	padding: 4% 15% 4% 15%;
+	margin: -2% 14% 0% 14%;
+
+}
+ .head4{
+	border: solid 2px #e91e63;
+	margin: 10% 25% 0% 25%;
+	background-color:#e91e63;
+	color: white;
+	border-radius:25px;
+	padding: 1% 10% 1% 10%;
+	text-align: center; 
+	font-size: 3vw;
+}
+
+/*materi ipa*/
+.si{
+	border: solid 3px #e91e63;
+	padding: 4% 15% 4% 15%;
+	margin: -2% 14% 0% 14%;
+
+}
+ .headi{
+	border: solid 2px #e91e63;
+	margin: 10% 25% 0% 25%;
+	background-color:#e91e63;
+	color: white;
+	border-radius:25px;
+	padding: 1% 10% 1% 10%;
+	text-align: center; 
+	font-size: 2vw;
+}
+
+/* flip */
+.img{
+	width: 100%;
+	height: 114.5%;
+}
+.mapel{
+	height: 30%;
+	width:23%;
+	transform-style: preserve-3d;
+	perspective:600px;
+	display: inline-flex;
+	padding-bottom: 12%;
+	padding-top: 0.5%;
+	transition: 2.5s;
+	box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.18)
+}
+.mapel .front{
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: 1s;
+}
+.mapel:hover .front{
+	transform: rotateX(-180deg);
+}
+.mapel .back{
+	position:absolute;
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#000;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: 1s;
+}
+
+.mapel:hover .back{
+	transform: rotateX(0deg);
+}
+.mapel .back{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 50%
+	height: 100%;
+	background: #e91e63;
+}
+
+.mapel .back .details
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	padding: 2px;
+	box-sizing: border-box;
+}
+.mapel .back .details h2{
+	margin: 0;
+	padding: 0px;
+	font-size: 24px;
+	color: white;
+}
+
+
+
+.mapel .back1{
+	position:absolute;
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#000;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: 1s;
+}
+
+.mapel:hover .back1{
+	transform: rotateX(0deg);
+}
+.mapel .back1{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 50%
+	height: 100%;
+	background: #0b475f;
+}
+
+.mapel .back1 .details
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	padding: 2px;
+	box-sizing: border-box;
+}
+.mapel .back1 .details h2{
+	margin: 0;
+	padding: 0px;
+	font-size: 24px;
+	color: white;
+}
+
+
+.mapel .back2{
+	position:absolute;
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#000;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: 1s;
+}
+
+.mapel:hover .back2{
+	transform: rotateX(0deg);
+}
+.mapel .back2{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 50%
+	height: 100%;
+	background: #fecd54;
+}
+
+.mapel .back2 .details
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	padding: 2px;
+	box-sizing: border-box;
+}
+.mapel .back2 .details h2{
+	margin: 0;
+	padding: 0px;
+	font-size: 24px;
+	color: white;
+}
+
+
+
+
+.mapel .back3{
+	position:absolute;
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#000;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: 1s;
+}
+
+.mapel:hover .back3{
+	transform: rotateX(0deg);
+}
+.mapel .back3{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 50%
+	height: 100%;
+	background: #0a8de1;
+}
+
+.mapel .back3 .details
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	padding: 2px; 
+	box-sizing: border-box;
+}
+.mapel .back3 .details h2{
+	margin: 0;
+	padding: 0px;
+	font-size: 24px;
+	color: white;
+}
+
+.kiri{
+	position: absolute;
+	padding-left: 0% !important;
+	margin-left: -6% !important;
+}
+.kanan{
+	position: absolute;
+	margin-left: 43% !important;
+}
+.ig{
+	width:25%;
+	height:27%;
+}
+
+.idx{
+	background-color: #e91e63;
+}
+

@@ -1,0 +1,428 @@
+  <style type="text/css">
+  .vfoot{
+    padding-top: 18px; 
+    padding-bottom: 18px; 
+    background-color: #2980b9;
+    height: 100%;
+  }
+  .segitiga{
+   color: white;
+   width: 20%;
+   height: 20%;
+   background: #ffb502; 
+   -moz-border-radius: 50px; 
+   -webkit-border-radius: 50px; 
+   border-radius: 50px 0px;
+   font-size:3vw;
+   position: relative; 
+   padding-left: 30px; 
+   margin-left: 10px; 
+   }
+  .huruftips{
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:white;
+          margin-top: 0px;
+          background-color: #e91e63;
+          padding-left: 30px;
+          padding-top: 0px;
+          margin-left: -25px;
+          border-radius: 0px 50px 50px 0px;
+          margin-bottom:5px;
+          min-width: 80%;
+          font-size:2vw
+        } 
+  .tipsv{
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:white;
+          margin-top: 0px;
+          background-color: #e91e63;
+          padding-left: 30px;
+          padding-top: 0px;
+          margin-left: -25px;
+          border-radius: 0px 50px 50px 0px;
+          margin-bottom:5px;
+          min-width: 80%;
+          font-size:2vw
+  }
+ .hurufreq{
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:white;
+          margin-top: 0px;
+          background-color: #e91e63;
+          padding-left: 40px;
+          padding-top: 0px;
+          margin-left: -3.8%;
+          border-radius: 0px 50px 50px 0px;
+          margin-bottom:5px;
+          min-width: 70%;
+          font-size:2.6vw
+        } 
+.segitigareq{
+   color: white;
+   width: 10%;
+   height: 15%;
+   background: #ffb502; 
+   -moz-border-radius: 50px; 
+   -webkit-border-radius: 50px; 
+   border-radius: 50px 0px;
+   font-size:3vw;
+   position: relative; 
+   padding-left: 3% ; 
+   margin-left: 10px; 
+   }
+   .huruf1req{
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:white;
+          margin-top: 0px;
+          background-color: #e91e63;
+          padding-left: 3%;
+          padding-right: 41.5%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-left: -2%;
+          border-radius: 0px 50px 50px 0px;
+          margin-bottom:5px;
+          min-width: 100%;
+          font-size:3.2vw;
+        }
+  .tips { 
+           width: 80px;
+           height: 80px;
+           background-color:#ffb502; 
+           -moz-border-radius: 50px; 
+           -webkit-border-radius: 50px; 
+           border-radius: 50px;
+
+          }  
+
+
+.huruft{
+          font-size: 3.2vw;
+          -webkit-text-stroke:1px #1e3956;
+          -webkit-text-fill-color:#1e3956;
+          margin-top: -20px;
+          background-color:#ffb502;
+          padding-right: 8px;
+          padding-left: 8px;
+          margin-left: -3.2%;
+          position:relative;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+.huruf{
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:white;
+          margin-top: 0px;
+          background-color: #e91e63;
+          padding-left: 30px;
+          padding-right: 40%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-left: -25px;
+          border-radius: 0px 50px 50px 0px;
+          margin-bottom:5px;
+          min-width: 100%;
+          font-size:3.2vw;
+        }
+  .huruf1{
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:white;
+          margin-top: 0px;
+          background-color: #e91e63;
+          padding-left: 3%;
+          padding-right: 61%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-left: -25px;
+          border-radius: 0px 50px 50px 0px;
+          margin-bottom:5px;
+          min-width: 100%;
+          font-size:3.2vw;
+        }
+
+
+    .huruf2{
+          font-size: 3vw;
+          font-color:#ffb502;
+          margin-top: -20px;
+          padding-left: 4%;
+         }
+    .hmateri{
+          font-size: 1.5vw;
+          -webkit-text-fill-color:white;
+          margin-top: -20px;
+          padding-top:10px;
+          padding-bottom:10px;
+          text-align: center;
+         }
+        .huruf3{
+          font-size: 4vw;
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:#e91e63;
+          padding-top: 10px;
+          padding-bottom: 0px;
+         }
+    .bulat { 
+           width: 80px;
+           height: 80px;
+           background: #1e3956; 
+           -moz-border-radius: 50px; 
+           -webkit-border-radius: 50px; 
+           border-radius: 50px;
+           margin-top:7px; 
+          }
+    .bulat1{
+           width: 15px;
+           height: 15px;
+           background: white; 
+           border-radius: 50px;
+           margin-left:10px;  
+    }
+    .bulat2{
+           width: 15px;
+           height: 15px;
+           background: white; 
+           border-radius: 50px;
+           margin-left:20px;  
+    }
+  .tri {
+    margin-left: -3.2%;
+    position:absolute;
+    margin-top: 4.3% !important;
+    border-top: 3vw solid #e08b0e;
+    border-left: 3vw solid transparent;
+}
+
+   /*huruf kotak*/
+  .khuruf{
+          font-size: 4vw;
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:white;
+          margin-top: 0px;
+          background-color:  #e91e63;
+          padding-left: 3px;
+          padding-right: 3px;
+        }
+  .hurufk{
+          font-size: 4vw;
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:white;
+          margin-top: -20px;
+          background-color:#ffb502;
+          padding-right: 8px;
+          padding-left: 8px;
+        }
+  /*huruf kotak*/
+  /* Gambar costum */
+.photo-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-color: #4ECDC4;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.project .overlay {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+
+}
+
+.project:hover .photo-wrapper {
+  background-color:  #e91e63;
+  background-image:url(../img/pilih.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+.project:hover .photo {
+  opacity: 10;
+  filter: alpha(opacity=4000);
+  opacity: 0.1;
+  filter: alpha(opacity=40);
+}
+.project:hover .overlay {
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.tmb{
+  width: 49%;
+}
+  /* Gambar costum index */
+.ftr1{
+  width: 20%;
+  height: 20%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.ftr2{
+  width: 20%;
+  height: 20%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  padding-right:0%;
+  padding-left:0%;
+}
+.ftr{
+  width: 20%;
+  height: 20%;
+  padding-bottom: 4%;
+  padding-top: 5%;
+  padding-right:0%;
+  padding-left:0%;
+}
+.rs{
+  border: solid 0px #e91e63;
+  margin: -3% 3% 3% 3%;
+  display: flex;
+  padding-left: 25vw;
+  padding-top: 6vw;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.18);
+}
+.rsc{
+  border: solid 3px #d41656;
+  margin: -12% 0% 0% 4.5%;
+  height: 18vw;
+  width: 84.3vw;
+  background-color:#d41656;
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.18);
+}
+.sk{
+    border: solid 3px #e91e63;
+    height: 100%;
+    margin: -8% 1.5% 3% 1.5%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: white;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.18);
+}
+.rs1{
+  border: solid 3px #e91e63;
+  margin: -3% 3% 3% 3%;
+  display: flex;
+}
+  .hdr{
+   color: white;
+   width: 50%;
+   height: 20%;
+   background: #e91e63; 
+   -moz-border-radius: 50px; 
+   -webkit-border-radius: 50px; 
+   border-radius: 50px 0px;
+   font-size:4vw;
+   position: relative; 
+   padding-left: 17%; 
+   padding-right: 0%; 
+   margin-left: 25%; 
+   margin-bottom: -1.9%;
+   padding-top: 0.5%;
+   padding-right: 0.5%;
+   box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.18);
+   }
+  .hmapel{
+   color: white;
+   width: 53%;
+   height: 20%;
+   background:#e91e63; 
+   -moz-border-radius: 50px; 
+   -webkit-border-radius: 50px; 
+   border-radius: 50px 0px;
+   font-size:3vw;
+   position: relative; 
+   margin-left: 4%;
+   padding:1% 0% 1% 12%;
+   margin-top:-10%;
+   margin-bottom: 5%; 
+   }
+   /* login */
+.w{
+  color: white !important;
+  font-size: 1.5vw;
+}
+.m{
+  color: white;
+}
+
+.huruft1{
+          font-size: 3vw;
+          -webkit-text-stroke:1px #1e3956;
+          -webkit-text-fill-color:#1e3956;
+          margin-top: -20px;
+          background-color:#ffb502;
+          padding-right: 8px;
+          padding-left: 8px;
+          margin-left: 3%;
+          position:relative;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+.huruf1{
+          -webkit-text-stroke:1px white;
+          -webkit-text-fill-color:white;
+          margin-top: 0px;
+          background-color: #e91e63;
+          padding-left: 30px;
+          padding-right: 30%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-left: -25px;
+          border-radius: 0px 50px 50px 0px;
+          margin-bottom:5px;
+          min-width: 100%;
+          font-size:3vw;
+        }
+  .tri1 {
+    margin-left: 3.2%;
+    position:absolute;
+    margin-top: 4.2% !important;
+    border-top: 3vw solid #e08b0e;
+    border-left: 3vw solid transparent;
+}
+.pass1{
+  margin-right: 0%;
+  margin-left: 0%x;
+  background-color:;
+  padding-top: 40px !important;
+  padding-left: 10%
+}
+.tr{
+    border: solid 3px #e91e63;
+    height: 100%;
+    width: 92%;
+    margin-left: 4.5%;
+}
+  .bundar{
+   color: white;
+   width: 15%;
+   height: 15%;
+   background: #ffb502; 
+   -moz-border-radius: 50px; 
+   -webkit-border-radius: 50px; 
+   border-radius: 50px 0px;
+   font-size:3vw;
+   position: relative; 
+   padding-left: 10px; 
+   margin-left: 10px; 
+   }
+    .hbundar{
+      color: red;
+      font-size: 2vw;
+    }
