@@ -22,7 +22,7 @@
 						<thead>
 							<th>ID User</th>
 							<th>Nama User</th>
-							<th>Status User</th>
+							<th>Level</th>
 							<th>#Tindakan</th>
 		              	</thead>
 					</table>
@@ -55,7 +55,7 @@
 	$(document).ready(function() {
 		$('#add').click(function() {
 			$('#modal-success').modal('show');
-			$('.modal-body').load('<?=base_url('administrator/management/user/admin/'.$this->ubah->encode('_form'))?>',function(o,t,tr) {
+			$('.modal-body').load('<?=base_url('administrator/management/'.$this->ubah->encode('_form'))?>',function(o,t,tr) {
 				if (tr.status != 200) {
 					$(this).html(o);
 				}
@@ -86,28 +86,16 @@
 	      processing : true,
 	      serverSide : true,
 	      ajax : {
-	        url : '<?=base_url('administrator/management/user/admin/'.$this->ubah->encode('get_ajax'))?>',type : 'POST'},
+	        url : '<?=base_url('administrator/management/'.$this->ubah->encode('get_ajax'))?>',type : 'POST'},
 	        columns : [
-        		{'data' : 'id_admin'},
-        		{'data' : 'nama_admin'},
-        		{
-        			'data' : 'active',
-        			'orderable' : false,
-        			'mRender' : function(active) {
-        				if (active == 'true') {
-        					return '<small class="label label-success"><i class="fa  fa-check-square-o"></i> Active</small>';
-        				}
-        				else{
-        					return '<small class="label label-warning"><i class="fa  fa-times"></i> Non Active</small>';
-        				}
-        			}
-        		},
+        		{'data' : 'id_user'},
+        		{'data' : 'nama'},
+        		{'data' : 'level'},
         		{
         			'data' : 'url',
         			'orderable' : false,
         			'mRender' : function(data) {
-        				return '<a href="javascript:;" onclick=repair("'+data.reset+'") class="btn btn-primary"><i class="fa  fa-recycle"></i> Reset Sandi</a> <a href="javascript:;" onclick=change("'+data.switch+'") class="btn btn-primary"><i class="fa  fa-recycle"></i> Ganti Status</a> <a href="javascript:;" onclick=edit("'+data.edit+'") class="btn btn-warning"><i class="fa  fa-pencil"></i> Edit</a> <a href="javascript:;" onclick=del("'+data.delete+'") class="btn btn-danger"><i class="fa  fa-trash"></i> Delete</a>';
-        				// return data.action;
+        				return '<a href="javascript:;" onclick=repair("'+data.reset+'")><i class="fa  fa-recycle"></i> Reset Sandi</a> <a href="javascript:;" onclick=edit("'+data.edit+'")><i class="fa  fa-pencil"></i> Edit</a> <a href="javascript:;" onclick=del("'+data.delete+'")><i class="fa  fa-trash"></i> Delete</a>';
         			}
         		},
 	          
@@ -162,12 +150,11 @@
 				type : 'GET',
 				datatype : 'JSON',
 				success : function(data) {
-					// var a = JSON.parse(data);
-					// if (a.respon.execute) {
-	    //             	table.api().ajax.reload();
-	    //             	swal('Message',a.respon.message,'success');
-					// }
-					swal('pems',data,'success');
+					var a = JSON.parse(data);
+					if (a.respon.execute) {
+	                	table.api().ajax.reload();
+	                	swal('Message',a.respon.message,'success');
+					}
 				},
 				error : function (o,t,tr) {
 					swal('Error',"#"+o.status+' '+o.statusText,'error');

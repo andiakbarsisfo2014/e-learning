@@ -64,78 +64,81 @@
 <script type="text/javascript">
   $(document).ready(function() {
     Pace.restart()
-  $('#guru').click(function() {
-    $('.content-wrapper').load('<?=base_url('administrator/guru/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
-      if (tr.status != 200) {
-        $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
-      }
+    $('#call').click(function() {
+      $.ajax({
+        url : '<?= base_url('front/panggil/') ?>',
+        type : 'GET',
+        datatype : 'JSON',
+        success : function(data) {
+          var a = JSON.parse(data);
+          alert('Nomor Antrian : '+a.id);
+        },
+        error : function(data) {
+          alert(data);
+        }
+      })
     })
-    history.pushState('..','..','<?= base_url('administrator/guru/').$this->ubah->encode('index') ?>');
-  });
-  $('#siswa').click(function() {
-    $('.content-wrapper').load('<?=base_url('administrator/siswa/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
-      if (tr.status != 200) {
-        $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
-      }
+    $('#reset').click(function() {
+      $.ajax({
+        url : '<?= base_url('administrator/panggil/'.$this->ubah->encode('reset')) ?>',
+        type : 'GET',
+        datatype : 'JSON',
+        success : function(data) {
+          alert('Antrian Berubah');
+        },
+        error : function(data) {
+          alert(data);
+        }
+      })
     })
-    history.pushState('..','..','<?= base_url('administrator/siswa/').$this->ubah->encode('index') ?>');
-  });
-  $('#mapel').click(function() {
-    $('.content-wrapper').load('<?=base_url('administrator/mata-pelajaran/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
-      if (tr.status != 200) {
-        $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
-      }
-    })
-    history.pushState('..','..','<?= base_url('administrator/mata-pelajaran/').$this->ubah->encode('index') ?>');
-  });
-  $('#materi').click(function() {
-    $('.content-wrapper').load('<?=base_url('administrator/materi/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
-      if (tr.status != 200) {
-        $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
-      }
-    })
-    history.pushState('..','..','<?= base_url('administrator/materi/').$this->ubah->encode('index') ?>');
-  });
-  $('#man_guru').click(function() {
-    $('.content-wrapper').load('<?=base_url('administrator/management/user/guru/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
-      if (tr.status != 200) {
-        $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
-      }
-    })
-    history.pushState('..','..','<?= base_url('administrator/management/user/guru/').$this->ubah->encode('index') ?>');
-  });
-  $('#man_siswa').click(function() {
-    $('.content-wrapper').load('<?=base_url('administrator/management/user/siswa/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
-      if (tr.status != 200) {
-        $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
-      }
-    })
-    history.pushState('..','..','<?= base_url('administrator/management/user/siswa/').$this->ubah->encode('index') ?>');
-  });
-  $('#soal').click(function() {
-    $('.content-wrapper').load('<?=base_url('administrator/soal/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
-      if (tr.status != 200) {
-        $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
-      }
-    })
-    history.pushState('..','..','<?= base_url('administrator/soal/').$this->ubah->encode('index') ?>');
-  });
-  $('#man_admin').click(function() {
-    $('.content-wrapper').load('<?=base_url('administrator/management/user/admin/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
-      if (tr.status != 200) {
-        $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
-      }
-    })
-    history.pushState('..','..','<?= base_url('administrator/management/user/admin/').$this->ubah->encode('index') ?>');
-  });
-  $('#profile').click(function() {
-    $('.content-wrapper').load('<?=base_url('administrator/profile/'.$this->session->userdata('as').'/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
-      if (tr.status != 200) {
-        $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
-      }
-    })
-    history.pushState('..','..','<?= base_url('administrator/profile/'.$this->session->userdata('as').'/').$this->ubah->encode('index') ?>');
-  });
+    $('#manuser').click(function() {
+      $('.content-wrapper').load('<?=base_url('administrator/management/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
+        if (tr.status != 200) {
+          $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
+        }
+      })
+      history.pushState('..','..','<?= base_url('administrator/management/').$this->ubah->encode('index') ?>');
+    });
+    $('#layanan').click(function() {
+      $('.content-wrapper').load('<?=base_url('administrator/layanan/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
+        if (tr.status != 200) {
+          $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
+        }
+      })
+      history.pushState('..','..','<?= base_url('administrator/layanan/').$this->ubah->encode('index') ?>');
+    });
+    $('#master').click(function() {
+      $('.content-wrapper').load('<?=base_url('administrator/data-penduduk/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
+        if (tr.status != 200) {
+          $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
+        }
+      })
+      history.pushState('..','..','<?= base_url('administrator/data-penduduk/').$this->ubah->encode('index') ?>');
+    });
+    $('#kk').click(function() {
+      $('.content-wrapper').load('<?=base_url('administrator/kartu-keluarga/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
+        if (tr.status != 200) {
+          $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
+        }
+      })
+      history.pushState('..','..','<?= base_url('administrator/kartu-keluarga/').$this->ubah->encode('index') ?>');
+    });
+    $('#resi').click(function() {
+      $('.content-wrapper').load('<?=base_url('administrator/resi/'.$this->ubah->encode('index'))?>',function(o,t,tr) {
+        if (tr.status != 200) {
+          $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
+        }
+      })
+      history.pushState('..','..','<?= base_url('administrator/resi/').$this->ubah->encode('index') ?>');
+    });
+    $('#get_file').click(function() {
+      $('.content-wrapper').load('<?=base_url('administrator/ambil-berkas/'.$this->ubah->encode('get_files'))?>',function(o,t,tr) {
+        if (tr.status != 200) {
+          $(this).html('<h1>'+tr.status+'</h1> <h4>'+a.statusText+'</h4>');
+        }
+      })
+      history.pushState('..','..','<?= base_url('administrator/ambil-berkas/').$this->ubah->encode('get_files') ?>');
+    });
   $('li.treeview').click(function() {
     $('li.treeview').removeClass('active');
     $(this).addClass('active');

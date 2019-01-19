@@ -11,7 +11,7 @@
 <section class="content">
 	<div class="row">
 		<div class="col-md-12">
-			Silahkan Login Sebagai <a href="<?= base_url('guru/login') ?>">Guru</a> Atau Sebagai <a href="<?=base_url('administrator/login')?>">Admin</a> 
+			Selamat Datang Di Website Resi
 		</div>
 	</div>
 </section>

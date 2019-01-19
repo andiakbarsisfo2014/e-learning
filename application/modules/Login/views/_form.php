@@ -1,5 +1,5 @@
 <div class="login-logo">
-    <a href="javascript:;">E<b>-</b>Learning</a>
+    <a href="javascript:;">Web<b>-</b>Resi</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -15,7 +15,6 @@
       </div>
       <div class="row">
         <div class="col-xs-5">
-          <input type="hidden" name="as" value="<?=$title?>">
           <button type="submit" class="btn btn-primary btn-raised btn-block btn-flat">Sign In</button>
         </div>
         <!-- /.col -->
